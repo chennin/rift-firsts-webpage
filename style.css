@@ -1,0 +1,35 @@
+A:link{color:#ff6}
+A:visited{color:#9AF}
+body{ background-color:#000; font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#FFF}
+.tooltip{
+    display: inline;
+    position: relative;
+}
+tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+	      content: " \25B4\25BE"
+}
+.downarrow:before { content: "\25BC  "; }
+.rightarrow:before { content: "\25B6  "; }
+table thead th{background: #000 !important;}
+table tr:nth-child(odd) {background: #212121;}
+table tbody{border:2px solid #fff;border-collapse:separate;border-spacing:1px}
+table tbody tr:hover{background-color:#333!important}
+table {margin-left:5%;width:85%;border-radius:15px;border-collapse:separate;border-spacing:0;border:2px solid white;}
+th:first-child{border-radius: 15px 0 0 0;}
+th:last-child{border-radius: 0 15px 0 0;}
+th:only-child{border-radius: 15px 15px 0 0;}
+tr:last-child>td:first-child{border-radius: 0 0 0 15px;}
+tr:last-child>td:last-child{border-radius: 0 0 15px 0;}
