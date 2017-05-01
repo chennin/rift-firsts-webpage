@@ -10,7 +10,7 @@ Sister project to [RIFT Firsts XML Parser](https://github.com/chennin/rift-xml-f
 
 ## Config
 
-Open `config.txt` and fill in all settings. `ZIPDIR` is the location of your downloaded Rift\_Discoveries\*.zip which should have been downloaded when you set up the firsts XML parser.
+Copy `config.txt.dist` to `config.txt` and fill in all settings. `ZIPDIR` is the location of your downloaded Rift\_Discoveries\*.zip which should have been downloaded when you set up the firsts XML parser.
 
 Also requires the database set up and filled in like in the firsts XML parser.
 
