@@ -188,7 +188,7 @@ def application(environ, start_response):
                   break
                if results[idx]['Kind'] != kind: # No firsts for this Kind, so go to the next without starting a table for it
                   continue
-               line('h4', "{0}s".format(kind))
+               line('h4', "{0}s".format(kind), klass = "tablename")
                with tag('table', klass = 'sortable'):
                   with tag('thead'):
                      with tag('tr'):
