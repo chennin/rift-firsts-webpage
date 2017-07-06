@@ -125,6 +125,7 @@ def application(environ, start_response):
        with tag('head'):
           doc.stag('meta', ('http-equiv', "Content-Type"), ('content', "text/html; charset=utf-8"))
           doc.stag('link', ('rel', "stylesheet"), ('type', "text/css"), ('href', "style.css"))
+          doc.stag('link', ('rel', "stylesheet"), ('type', "text/css"), ('href', "https://www.magelocdn.com/pack/magelo-bar-css2.css"))
           # <script> is NOT a void tag, so need with/pass
           with tag('script', ('src', "./sorttable.js"), ('type', "text/javascript")):
              pass
