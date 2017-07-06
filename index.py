@@ -153,7 +153,7 @@ def application(environ, start_response):
              text(".")
           with tag('form', ('id', "firstfrom")):
              line('label', "Character: ", ('for', "player"))
-             doc.stag('input', ('type', "text"), ('name', "player"), ('id', "player"), ('size', "14"), ('value', escape(search['player']) if search['player'] != "" else ""))
+             doc.stag('input', ('type', "text"), ('name', "player"), ('id', "player"), ('size', "14"), ('maxlength', "255"), ('value', escape(search['player']) if search['player'] != "" else ""))
              line('label', " Shard: ", ('for', "shard"))
              with doc.select(('name', "shard"), ('id', "shard")):
                 line('option', "All")
