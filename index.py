@@ -138,7 +138,7 @@ def application(environ, start_response):
           doc.asis("<!--email_off-->")
           # Intro / search boxes
           with tag('h3'):
-             text("Rift Shard Firsts BETA")
+             text("Rift Shard Firsts")
           line('p', "This site tells you the shard firsts for your character or guild.")
           with tag('p'):
              # Find date of latest zip
