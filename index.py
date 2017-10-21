@@ -73,6 +73,7 @@ def application(environ, start_response):
        search['shard'] = "All"
     pattern = re.compile('\W+')
     pattern.sub('', search['player'])
+    search['player'] = search['player'].capitalize()
     pattern.sub('', search['guild'])
 
     results = None
