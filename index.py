@@ -213,6 +213,11 @@ def application(environ, start_response):
                                  # The timestamp comes out as a datetime.datetime. Manually make everything a string.
                                  line('td', results[idx][cell].__str__())
                         idx += 1
+          with tag('p'):
+            text('See other RIFT tools ')
+            line('a', "here", href="https://rift.events/main.html")
+            text('.')
+
        doc.asis('<!--/email_off-->')
 
     start_response('200 OK', [('Content-Type','text/html')])
