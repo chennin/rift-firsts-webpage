@@ -75,6 +75,7 @@ def application(environ, start_response):
     pattern.sub('', search['player'])
     search['player'] = search['player'].capitalize()
     pattern.sub('', search['guild'])
+    search['guild'] = search['guild'].capitalize()
 
     results = None
     # The model is to print verbose errors to console/log, and print a generic error to Web page
